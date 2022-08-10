@@ -137,16 +137,28 @@ hr {
   flex-wrap: wrap;
 }
 
+.video {
+  width: 270px;
+  margin-bottom: 30px;
+}
+
 .thumbnail {
   width: 100%;
   height: 170px;
+  transition: all 1s;
 }
 
-.thumbnail img {
+.thumbnail video {
   object-fit: cover;
   height: 94%;
   width: 100%;
+  transition: all 1s;
 }
+
+video:hover{
+  transform: scale(1.1);
+}
+
 .author img {
   object-fit: cover;
   border-radius: 50%;
