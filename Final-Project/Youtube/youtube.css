@@ -145,7 +145,7 @@ hr {
 .thumbnail {
   width: 100%;
   height: 170px;
-  transition: all 1s;
+  transition: all 3s;
 }
 
 .thumbnail video {
@@ -156,7 +156,7 @@ hr {
 }
 
 video:hover{
-  transform: scale(1.1);
+  transform: scale(2.2);
 }
 
 .author img {
