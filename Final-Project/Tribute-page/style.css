@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-@import '~material-design-icons/iconfont/material-icons.css';
-@import url('node_modules/material-design-icons/iconfont/material-design-icons.css');
-
-
 
 html {
-  /* Setting a base font size of 10px give us easier rem calculations
-     Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
-   */
+  
   font-size: 10px;
 }
 
+header {
+  display: flex;
+}
+header div a img {
+  float: left;
+  width: 150px;
+}
+
 body {
-  /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+  
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
     'Helvetica Neue', Arial, sans-serif;
   font-size: 1.6rem;
@@ -21,10 +23,23 @@ body {
   color: #333;
   margin: 0;
 }
+.photo-baniere img{
+  width: 100%;
+  height: 150px;
+}
 
 h1 {
   font-size: 4rem;
   margin-bottom: 0;
+  color: coral;
+
+}
+
+.legende{
+  color: seagreen;
+}
+.legende1{
+  color: #0A1172;
 }
 
 @media (max-width: 460px) {
@@ -103,4 +118,9 @@ blockquote {
   max-width: 545px;
   margin: 0 auto 50px auto;
   text-align: left;
+}
+
+footer {
+  background: linear-gradient(135deg, orange 60%, cyan);
+  height: 25vh;
 }
