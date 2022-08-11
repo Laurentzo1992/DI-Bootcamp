@@ -1,46 +1,8 @@
+/* Importation material icon*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-@import '~material-design-icons/iconfont/material-icons.css';
-@import url('node_modules/material-design-icons/iconfont/material-design-icons.css');
 
-
-@font-face {
-  font-family: 'Material Icons';
-  font-weight: 400;
-  font-style: normal;
-  src: local('material-icons'), local('MaterialIcons-Regular'),
-    url('node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ttf') format('truetype'),
-    url('node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff') format('truetype'),
-    url('node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff2') format('truetype');
-
-}
-
-.material-icons {
-  display: inline-block;
-  font-family: 'Material Icons';
-  font-size: 24px; /* Preferred icon size */
-  font-weight: normal;
-  line-height: 1;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-
-
-
+/* Reinitialisation des marge par defaut de document html */
 
 * {
   margin: 0;
@@ -48,6 +10,7 @@
   box-sizing: border-box;
 }
 
+/* police ddu body */
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -74,13 +37,13 @@ body {
     background-color: white;
     overflow-y: hidden;
 } 
-
+/* responsive pour les ecrans inf à 76px */
 @media (max-width: 768px) {
     .side-bar {
       display: none;
     }
   }
-
+/* header icon */
 .left {
  display: flex;
  align-items: center;
@@ -134,7 +97,7 @@ input:focus {
       background: greenyellow;
      cursor: pointer;
   }
-
+/* side bar icon*/
   .nav {
     width: 100%;
     display: flex;
@@ -237,7 +200,7 @@ span {
   color: rgb(96, 96, 96);
   font-size: 12px;
 }
-
+/* responsive side bar */
 @media (max-width: 768px) {
     .side-bar {
       display: none;
@@ -246,6 +209,8 @@ span {
       display: none;
     }
 }
+
+/* responsive header search icon */
 
 @media (max-width: 900px) {
     .search input {
