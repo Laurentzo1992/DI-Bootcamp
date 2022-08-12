@@ -5,14 +5,43 @@ html {
   font-size: 10px;
 }
 
-header {
-  display: flex;
-}
-header div a img {
-  float: left;
-  width: 150px;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 15px;
+  }
+
+.left {
+ display: flex;
+ align-items: center;
 }
 
+.left #menu {
+ padding: 0 7px;
+ cursor: pointer;
+}
+
+.search {
+ display: flex;
+}
+
+.material-icons {
+    font-family: "Times New Roman";
+    font-size: 3rem;
+    color: green;
+    padding: 0 7px;
+    cursor: pointer;
+    
+  }
+  a{
+    text-decoration-line: none;
+  }
+
+  header .orange_logo img{
+      width: 50%;
+  }
 body {
   
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
@@ -22,10 +51,6 @@ body {
   text-align: center;
   color: #333;
   margin: 0;
-}
-.photo-baniere img{
-  width: 100%;
-  height: 150px;
 }
 
 h1 {
@@ -119,8 +144,11 @@ blockquote {
   margin: 0 auto 50px auto;
   text-align: left;
 }
-
+footer{
+  display: flex;
+  flex-direction: column;
+}
 footer {
   background: linear-gradient(135deg, orange 60%, cyan);
-  height: 25vh;
+  height: 30vh;
 }
